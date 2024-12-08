@@ -17,6 +17,7 @@ body{
     background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
     background-size: cover; /* A imagem é redimensionada para garantir que não haja espaços vazios visíveis no fundo. */
     background-attachment: fixed; /* Fixa a imagem de fundo, para que ela não role com a página. */
+    background: ;
 
 }
 
