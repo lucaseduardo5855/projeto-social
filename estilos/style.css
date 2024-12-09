@@ -17,7 +17,6 @@ body{
     background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
     background-size: cover; /* A imagem é redimensionada para garantir que não haja espaços vazios visíveis no fundo. */
     background-attachment: fixed; /* Fixa a imagem de fundo, para que ela não role com a página. */
-    background: 
 }
 
 
@@ -26,8 +25,8 @@ main{
     position: relative;
 }
 
-section#telefone{
-    position: absolute;
+section#telefone{ 
+    position: absolute; /*  é usada para posicionar um elemento de forma absoluta em relação ao seu contêiner */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /*Centraliza para o meio da tela*/
@@ -43,5 +42,23 @@ iframe#tela{
         left: 22px;
         width: 269px;
         height: 471px;
-    }
+}
 
+section#redes-sociais {
+    text-align: right; /* Alinha o conteúdo do elemento à direita */
+}
+
+section#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%; /* Arredonda 50% da imagem */
+    box-shadow: 2px 2px 5px rgb(0, 0, 0.400); /* Sombra com deslocamento horizontal de 2px, deslocamento vertical 2px, desfoque 5px e cor preta */
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo total de largura e altura do elemento */
+}
+
+section#redes-sociais img:hover{ /* :Hover - aplica o estilo definido apenas quando mouse estiver sobre a imagem */
+    border: 2px solid rgba(255, 255, 255, 0.507); 
+    transform: translate(-2px, -2px); /* translate - a imagem faz um efeito de pulando -2px pula para esquerda e o outro para cima */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+    transition: transform .5s. border 1s;
+}
